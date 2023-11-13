@@ -1,0 +1,29 @@
+name: PowerDownPlugin # the plugins name as it should appear in the plugin list /pl
+version: 1.0 # the plugin's version
+author: minermanmk
+main: me.minermanmk.Main
+api-version: 1.20 # the version of the API you want to use, required starting with 1.13
+
+load: POSTWORLD
+prefix: MinerTesting
+# Replace "kit" with the name of your command.
+commands:
+  mkTest1:
+    description: Your description
+    usage: /<command>
+    permission: miner.allowed
+    permission-message: Not allowed.
+  mkTest2:
+    description: Your description
+    usage: /<command>
+    permission: miner.allowed
+    permission-message: Not allowed.
+  toggleProjSpeedMod:
+    description: Toggles the speed modifiers for tridents, potions, and arrows.
+    usage: /<command>
+    permission: miner.allowed
+    permission-message: Not allowed.
+permissions:
+  miner.allowed:
+    description: allows test commands
+    default: op
